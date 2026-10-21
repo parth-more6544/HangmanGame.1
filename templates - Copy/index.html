@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Hangman: The Neon Arcade — A cinematic retro arcade word guessing game. Guess letters, survive the gallows, and achieve high scores in an authentic 1980s neon noir atmosphere.">
+  <meta name="theme-color" content="#080A18">
+  <title>HANGMAN — The Neon Arcade | Guess. Survive. Win.</title>
+
+  <!-- Google Fonts: Orbitron, Share Tech Mono, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700;900&family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="neon-theme normal-glow normal-motion">
+
+  <!-- Ambient CRT Scanline Overlay -->
+  <div class="crt-scanline-overlay" aria-hidden="true"></div>
+  <div class="crt-vignette-overlay" aria-hidden="true"></div>
+
+  <!-- Screen Flash Pulse (for wrong guess / win) -->
+  <div id="screen-pulse" class="screen-pulse" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER MARQUEE ==================== -->
+  <header class="arcade-header">
+    <div class="header-container">
+      <a href="#home" class="logo-link" id="logo-nav" aria-label="Hangman Arcade Home">
+        <div class="marquee-logo">
+          <span class="logo-text">HANGMAN</span>
+          <span class="logo-badge">THE NEON ARCADE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <button type="button" class="nav-btn active" data-view="home" id="nav-home">HOME</button>
+        <button type="button" class="nav-btn" data-view="setup" id="nav-play">PLAY</button>
+        <button type="button" class="nav-btn" data-modal="daily-modal" id="nav-daily">DAILY CHALLENGE</button>
+        <button type="button" class="nav-btn" data-modal="rules-modal" id="nav-rules">HOW TO PLAY</button>
+        <button type="button" class="nav-btn" data-modal="stats-modal" id="nav-stats">HALL OF FAME</button>
+        <button type="button" class="nav-btn icon-btn" data-modal="settings-modal" id="nav-settings" title="Settings" aria-label="Settings">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </button>
+        <button type="button" class="nav-btn icon-btn" id="sound-toggle-btn" title="Toggle Sound FX" aria-label="Toggle Sound">
+          <span id="sound-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+          </span>
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-btn" id="mobile-toggle" aria-label="Open Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <button type="button" class="mobile-nav-link" data-view="home">HOME</button>
+      <button type="button" class="mobile-nav-link" data-view="setup">PLAY GAME</button>
+      <button type="button" class="mobile-nav-link" data-modal="daily-modal">DAILY CHALLENGE</button>
+      <button type="button" class="mobile-nav-link" data-modal="two-player-modal">2-PLAYER MODE</button>
+      <button type="button" class="mobile-nav-link" data-modal="rules-modal">HOW TO PLAY</button>
+      <button type="button" class="mobile-nav-link" data-modal="stats-modal">HALL OF FAME</button>
+      <button type="button" class="mobile-nav-link" data-modal="settings-modal">SETTINGS</button>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN VIEW CONTAINER ==================== -->
+  <main class="arcade-viewport">
+
+    <!-- 1. HOME / HERO VIEW -->
+    <section id="view-home" class="view-section active">
+      <div class="arcade-corridor-bg">
+        <div class="corridor-ambient-red"></div>
+        <div class="corridor-floor-reflect"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-marquee-sign">
+          <div class="neon-wire-glow"></div>
+          <h1 class="hero-title" data-text="HANGMAN">HANGMAN</h1>
+          <p class="hero-tagline">GUESS. SURVIVE. WIN.</p>
+        </div>
+
+        <p class="hero-description">
+          Step into the neon corridor. One hidden word. Six wrong guesses before the gallows falls.
+          Can you survive the ultimate arcade challenge?
+        </p>
+
+        <!-- Central Arcade Cabinet Preview -->
+        <div class="hero-cabinet-preview">
+          <div class="cabinet-marquee">
+            <span class="marquee-flicker">★ NEON ARCADE ★</span>
+          </div>
+          <div class="cabinet-screen">
+            <div class="cabinet-crt-inner">
+              <svg class="preview-hangman-svg" viewBox="0 0 160 180" width="120" height="135">
+                <path d="M 20 160 L 140 160 M 50 160 L 50 20 L 110 20 L 110 45 M 50 50 L 80 20" stroke="#DE9C57" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <circle cx="110" cy="60" r="14" stroke="#F04432" stroke-width="2.5" fill="none"/>
+                <line x1="110" y1="74" x2="110" y2="115" stroke="#F04432" stroke-width="2.5"/>
+                <line x1="110" y1="85" x2="88" y2="105" stroke="#F04432" stroke-width="2.5"/>
+                <line x1="110" y1="85" x2="132" y2="105" stroke="#F04432" stroke-width="2.5"/>
+                <line x1="110" y1="115" x2="90" y2="145" stroke="#F04432" stroke-width="2.5"/>
+                <line x1="110" y1="115" x2="130" y2="145" stroke="#F04432" stroke-width="2.5"/>
+              </svg>
+              <div class="preview-word-glow">P Y _ H O N</div>
+            </div>
+          </div>
+          <div class="cabinet-coin-slot">
+            <span class="coin-insert-glow">INSERT 25¢ TOKEN</span>
+          </div>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-actions">
+          <button type="button" class="arcade-btn primary-coin-btn" id="btn-insert-coin">
+            <span class="coin-icon">🪙</span>
+            <span class="btn-text">INSERT COIN • START GAME</span>
+            <span class="btn-light-reflect"></span>
+          </button>
+          
+          <div class="secondary-actions">
+            <button type="button" class="arcade-btn secondary-btn" data-modal="daily-modal">
+              <span>📅</span> DAILY CHALLENGE
+            </button>
+            <button type="button" class="arcade-btn secondary-btn" data-modal="two-player-modal">
+              <span>👥</span> 2-PLAYER MODE
+            </button>
+            <button type="button" class="arcade-btn secondary-btn" data-modal="rules-modal">
+              <span>📜</span> HOW TO PLAY
+            </button>
+          </div>
+        </div>
+
+        <!-- Arcade Feature Strip -->
+        <div class="feature-strip">
+          <div class="feature-card">
+            <span class="feature-icon">⚡</span>
+            <h4>3 DIFFICULTY TIERS</h4>
+            <p>Rookie (4-6), Player (6-8), Legend (8-12)</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🕹️</span>
+            <h4>6 WORD CATEGORIES</h4>
+            <p>Technology, Movies, Animals, Sports & more</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🏆</span>
+            <h4>HALL OF FAME</h4>
+            <p>SQLite tracked streaks & high score records</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🛡️</span>
+            <h4>ARCADE HARDWARE UI</h4>
+            <p>Illuminated QWERTY keys & CRT vector glow</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. GAME SETUP VIEW -->
+    <section id="view-setup" class="view-section">
+      <div class="setup-cabinet-wrapper">
+        <div class="setup-marquee">
+          <h2>CHOOSE YOUR CHALLENGE</h2>
+          <p class="setup-subtitle">SELECT DIFFICULTY & CATEGORY TO INITIALIZE CABINET</p>
+        </div>
+
+        <!-- Difficulty Selection -->
+        <div class="setup-group">
+          <h3 class="setup-label"><span>01</span> SELECT DIFFICULTY</h3>
+          <div class="difficulty-grid" role="radiogroup" aria-label="Difficulty Levels">
+            
+            <div class="difficulty-card" data-diff="easy" tabindex="0" role="radio" aria-checked="false">
+              <div class="card-badge">EASY</div>
+              <h4>ROOKIE</h4>
+              <p class="diff-letters">4 – 6 Letters</p>
+              <p class="diff-desc">Accessible words. 6 incorrect guesses allowed.</p>
+              <div class="card-glow-bar"></div>
+            </div>
+
+            <div class="difficulty-card selected" data-diff="medium" tabindex="0" role="radio" aria-checked="true">
+              <div class="card-badge popular">PLAYER</div>
+              <h4>MEDIUM</h4>
+              <p class="diff-letters">6 – 8 Letters</p>
+              <p class="diff-desc">Balanced challenge for arcade veterans. 6 strikes allowed.</p>
+              <div class="card-glow-bar"></div>
+            </div>
+
+            <div class="difficulty-card" data-diff="hard" tabindex="0" role="radio" aria-checked="false">
+              <div class="card-badge expert">LEGEND</div>
+              <h4>HARD</h4>
+              <p class="diff-letters">8 – 12 Letters</p>
+              <p class="diff-desc">Master vocabulary for survivalists. Maximum score rewards.</p>
+              <div class="card-glow-bar"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category Selection -->
+        <div class="setup-group">
+          <h3 class="setup-label"><span>02</span> SELECT WORD CATEGORY</h3>
+          <div class="category-grid" role="radiogroup" aria-label="Categories">
+            
+            <div class="category-card selected" data-category="Technology" tabindex="0" role="radio" aria-checked="true">
+              <div class="cat-icon">💻</div>
+              <div class="cat-info">
+                <h4>Technology</h4>
+                <span>Code, Hardware, Networks</span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Movies" tabindex="0" role="radio" aria-checked="false">
+              <div class="cat-icon">🎬</div>
+              <div class="cat-info">
+                <h4>Movies</h4>
+                <span>Classics, Sci-Fi, Directors</span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Animals" tabindex="0" role="radio" aria-checked="false">
+              <div class="cat-icon">🦁</div>
+              <div class="cat-info">
+                <h4>Animals</h4>
+                <span>Predators, Marine, Birds</span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Countries" tabindex="0" role="radio" aria-checked="false">
+              <div class="cat-icon">🌍</div>
+              <div class="cat-info">
+                <h4>Countries</h4>
+                <span>Nations, Islands, Landmarks</span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Sports" tabindex="0" role="radio" aria-checked="false">
+              <div class="cat-icon">⚽</div>
+              <div class="cat-info">
+                <h4>Sports</h4>
+                <span>Olympic Games, Athletics</span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="General Knowledge" tabindex="0" role="radio" aria-checked="false">
+              <div class="cat-icon">🧠</div>
+              <div class="cat-info">
+                <h4>General Knowledge</h4>
+                <span>Science, Nature, Geography</span>
+              </div>
+            </div>
+
+            <div class="category-card random-card" data-category="Random" tabindex="0" role="radio" aria-checked="false">
+              <div class="cat-icon">🎲</div>
+              <div class="cat-info">
+                <h4>Random</h4>
+                <span>Mystery Category Pick</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Start Game Button -->
+        <div class="setup-footer">
+          <button type="button" class="arcade-btn start-round-btn" id="btn-start-round">
+            <span class="btn-text">START ROUND →</span>
+            <span class="btn-subtext">BOOT ARCADE CRT SCREEN</span>
+          </button>
+          <button type="button" class="back-link-btn" id="btn-setup-back">← RETURN TO LOBBY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MAIN GAMEPLAY VIEW (ARCADE CABINET) -->
+    <section id="view-game" class="view-section">
+      <div class="game-cabinet-container">
+
+        <!-- Top Arcade HUD Bar -->
+        <header class="arcade-hud">
+          <div class="hud-item score-hud">
+            <span class="hud-label">SCORE</span>
+            <span class="hud-val digits" id="hud-score">000000</span>
+          </div>
+
+          <div class="hud-item lives-hud">
+            <span class="hud-label">LIVES</span>
+            <div class="lives-tokens" id="hud-lives-icons">
+              <span class="life-token active" title="Life 1"></span>
+              <span class="life-token active" title="Life 2"></span>
+              <span class="life-token active" title="Life 3"></span>
+              <span class="life-token active" title="Life 4"></span>
+              <span class="life-token active" title="Life 5"></span>
+              <span class="life-token active" title="Life 6"></span>
+            </div>
+            <span class="hud-val digits" id="hud-lives-text">06 / 06</span>
+          </div>
+
+          <div class="hud-item timer-hud">
+            <span class="hud-label">TIME</span>
+            <span class="hud-val digits" id="hud-timer">00:00</span>
+          </div>
+
+          <div class="hud-item badge-hud">
+            <span class="hud-label">LEVEL</span>
+            <span class="hud-badge-val" id="hud-difficulty">MEDIUM</span>
+          </div>
+
+          <div class="hud-item mode-hud">
+            <span class="hud-label">MODE</span>
+            <span class="hud-badge-val" id="hud-mode">SINGLE</span>
+          </div>
+        </header>
+
+        <!-- Arcade Screen Enclosure -->
+        <div class="arcade-screen-bezel">
+          <div class="bezel-screw top-left"></div>
+          <div class="bezel-screw top-right"></div>
+          <div class="bezel-screw bottom-left"></div>
+          <div class="bezel-screw bottom-right"></div>
+
+          <div class="crt-display-window">
+            
+            <!-- Left Display: Hangman SVG CRT Screen -->
+            <div class="crt-left-panel">
+              <div class="crt-panel-header">
+                <span class="crt-indicator-dot"></span>
+                <span class="crt-panel-title">MONITOR 01: GALLOWS SURVEILLANCE</span>
+              </div>
+
+              <div class="hangman-screen-stage">
+                <svg id="hangman-svg" class="hangman-vector" viewBox="0 0 240 280" width="100%" height="100%">
+                  <!-- Gallows Base and Posts (Always visible) -->
+                  <g class="gallows-scaffold" stroke="#DE9C57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <line x1="30" y1="250" x2="190" y2="250" class="gallow-beam" />
+                    <line x1="70" y1="250" x2="70" y2="30" class="gallow-beam" />
+                    <line x1="70" y1="30" x2="165" y2="30" class="gallow-beam" />
+                    <line x1="70" y1="75" x2="115" y2="30" class="gallow-beam" />
+                    <!-- Noose -->
+                    <line x1="165" y1="30" x2="165" y2="70" stroke="#DE9C57" stroke-width="3" stroke-dasharray="3,3" />
+                  </g>
+
+                  <!-- Hangman Character 6 Progressive Stages -->
+                  <!-- Stage 1: Head -->
+                  <g id="part-head" class="hangman-part" data-part="1">
+                    <circle cx="165" cy="90" r="18" class="neon-body-stroke" />
+                    <!-- Eyes and Mouth -->
+                    <circle cx="159" cy="86" r="2" class="neon-face-detail" />
+                    <circle cx="171" cy="86" r="2" class="neon-face-detail" />
+                    <line x1="161" y1="96" x2="169" y2="96" class="neon-face-detail" />
+                  </g>
+
+                  <!-- Stage 2: Torso -->
+                  <g id="part-torso" class="hangman-part" data-part="2">
+                    <line x1="165" y1="108" x2="165" y2="170" class="neon-body-stroke" />
+                  </g>
+
+                  <!-- Stage 3: Left Arm -->
+                  <g id="part-left-arm" class="hangman-part" data-part="3">
+                    <line x1="165" y1="122" x2="130" y2="152" class="neon-body-stroke" />
+                  </g>
+
+                  <!-- Stage 4: Right Arm -->
+                  <g id="part-right-arm" class="hangman-part" data-part="4">
+                    <line x1="165" y1="122" x2="200" y2="152" class="neon-body-stroke" />
+                  </g>
+
+                  <!-- Stage 5: Left Leg -->
+                  <g id="part-left-leg" class="hangman-part" data-part="5">
+                    <line x1="165" y1="170" x2="135" y2="225" class="neon-body-stroke" />
+                  </g>
+
+                  <!-- Stage 6: Right Leg -->
+                  <g id="part-right-leg" class="hangman-part" data-part="6">
+                    <line x1="165" y1="170" x2="195" y2="225" class="neon-body-stroke" />
+                  </g>
+                </svg>
+
+                <div class="stage-status-caption">
+                  <span id="stage-warning-text">STAGE 0 / 6 — GALLOWS CLEAR</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Display: Hidden Word, Clues & Keyboard Deck -->
+            <div class="crt-right-panel">
+              
+              <!-- Category and Info Header -->
+              <div class="word-meta-header">
+                <div class="meta-tag">
+                  <span class="tag-title">CATEGORY:</span>
+                  <span class="tag-val" id="game-category-name">TECHNOLOGY</span>
+                </div>
+                <div class="meta-tag">
+                  <span class="tag-title">WORD LENGTH:</span>
+                  <span class="tag-val" id="game-word-length">6 LETTERS</span>
+                </div>
+              </div>
+
+              <!-- Primary Mission Clue / Definition Display (FREE & ALWAYS VISIBLE) -->
+              <div class="mission-definition-box" id="mission-definition-box">
+                <div class="mission-header">
+                  <span class="mission-icon">🎯</span>
+                  <span class="mission-heading">CLUE / DEFINITION:</span>
+                  <span class="mission-badge">FREE INTEL</span>
+                </div>
+                <p class="mission-clue-text" id="mission-clue-text">Identifying target characteristics...</p>
+              </div>
+
+              <!-- Message / Clue Banner -->
+              <div class="crt-message-ticker" id="game-message-box">
+                <span class="ticker-pulse">▶</span>
+                <span id="game-message-text">SELECT A LETTER FROM THE ARCADE CONSOLE BELOW</span>
+              </div>
+
+              <!-- Hidden Word Tiles Container -->
+              <div class="word-tiles-container" id="word-tiles-display" role="status" aria-live="polite">
+                <!-- Dynamically populated letter tiles -->
+              </div>
+
+              <!-- Controls / Hint Buttons Bar -->
+              <div class="game-control-strip">
+                <button type="button" class="arcade-action-btn hint-btn" id="btn-hint-letter" title="Reveal one hidden letter for -20 points">
+                  <span>🔍 UNMASK LETTER</span>
+                  <span class="cost-tag">-20 PTS</span>
+                </button>
+                <button type="button" class="arcade-action-btn hint-btn" id="btn-hint-eliminate" title="Eliminate 3 incorrect letters from the keyboard for -20 points">
+                  <span>⚡ ELIMINATE 3 KEYS</span>
+                  <span class="cost-tag">-20 PTS</span>
+                </button>
+                <button type="button" class="arcade-action-btn forfeit-btn" id="btn-forfeit" title="Abandon round">
+                  <span>🏳️ SURRENDER</span>
+                </button>
+              </div>
+
+              <!-- Interactive QWERTY Arcade Keyboard -->
+              <div class="arcade-keyboard-deck" id="arcade-keyboard" role="group" aria-label="Arcade Letter Keys">
+                <!-- Row 1: Q W E R T Y U I O P -->
+                <div class="keyboard-row">
+                  <button type="button" class="key-btn" data-key="Q">Q</button>
+                  <button type="button" class="key-btn" data-key="W">W</button>
+                  <button type="button" class="key-btn" data-key="E">E</button>
+                  <button type="button" class="key-btn" data-key="R">R</button>
+                  <button type="button" class="key-btn" data-key="T">T</button>
+                  <button type="button" class="key-btn" data-key="Y">Y</button>
+                  <button type="button" class="key-btn" data-key="U">U</button>
+                  <button type="button" class="key-btn" data-key="I">I</button>
+                  <button type="button" class="key-btn" data-key="O">O</button>
+                  <button type="button" class="key-btn" data-key="P">P</button>
+                </div>
+                <!-- Row 2: A S D F G H J K L -->
+                <div class="keyboard-row">
+                  <button type="button" class="key-btn" data-key="A">A</button>
+                  <button type="button" class="key-btn" data-key="S">S</button>
+                  <button type="button" class="key-btn" data-key="D">D</button>
+                  <button type="button" class="key-btn" data-key="F">F</button>
+                  <button type="button" class="key-btn" data-key="G">G</button>
+                  <button type="button" class="key-btn" data-key="H">H</button>
+                  <button type="button" class="key-btn" data-key="J">J</button>
+                  <button type="button" class="key-btn" data-key="K">K</button>
+                  <button type="button" class="key-btn" data-key="L">L</button>
+                </div>
+                <!-- Row 3: Z X C V B N M -->
+                <div class="keyboard-row">
+                  <button type="button" class="key-btn" data-key="Z">Z</button>
+                  <button type="button" class="key-btn" data-key="X">X</button>
+                  <button type="button" class="key-btn" data-key="C">C</button>
+                  <button type="button" class="key-btn" data-key="V">V</button>
+                  <button type="button" class="key-btn" data-key="B">B</button>
+                  <button type="button" class="key-btn" data-key="N">N</button>
+                  <button type="button" class="key-btn" data-key="M">M</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. VICTORY MODAL -->
+  <div class="arcade-modal" id="victory-modal" role="dialog" aria-modal="true" aria-labelledby="victory-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card victory-card">
+      <div class="modal-marquee-top">
+        <span class="victory-star">★</span> YOU SURVIVED! <span class="victory-star">★</span>
+      </div>
+      <div class="modal-body">
+        <div class="victory-graphic">
+          <div class="trophy-glow">🏆</div>
+        </div>
+        <h2 id="victory-title" class="victory-headline">LEVEL CLEARED!</h2>
+        <p class="victory-subhead">THE SECRET WORD WAS SUCCESSFULLY DECODED</p>
+
+        <div class="revealed-word-box victory-glow">
+          <span class="word-reveal-text" id="win-word-text">PYTHON</span>
+        </div>
+
+        <div class="victory-stats-grid">
+          <div class="v-stat">
+            <span class="v-label">FINAL SCORE</span>
+            <span class="v-val digits" id="win-score-val">000280</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">LIVES SPARED</span>
+            <span class="v-val digits" id="win-lives-val">04 / 06</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">TIME TAKEN</span>
+            <span class="v-val digits" id="win-time-val">00:45</span>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="arcade-btn primary-coin-btn" id="btn-win-next">
+            <span>NEXT ROUND →</span>
+          </button>
+          <button type="button" class="arcade-btn secondary-btn" id="btn-win-stats">
+            <span>VIEW STATS</span>
+          </button>
+          <button type="button" class="arcade-btn secondary-btn" id="btn-win-menu">
+            <span>MAIN MENU</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. GAME OVER MODAL -->
+  <div class="arcade-modal" id="gameover-modal" role="dialog" aria-modal="true" aria-labelledby="gameover-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card gameover-card">
+      <div class="modal-marquee-top gameover-marquee">
+        💀 GALLOWS CLAIMED 💀
+      </div>
+      <div class="modal-body">
+        <h2 id="gameover-title" class="gameover-headline">GAME OVER</h2>
+        <p class="gameover-subhead">SIX STRIKES EXHAUSTED</p>
+
+        <div class="revealed-word-box gameover-glow">
+          <span class="box-caption">THE SECRET WORD WAS:</span>
+          <span class="word-reveal-text" id="lose-word-text">ARCADE</span>
+        </div>
+
+        <div class="clue-explanation-box">
+          <span class="clue-tag">DEFINITION:</span>
+          <p id="lose-clue-text">An entertainment venue filled with coin-operated games.</p>
+        </div>
+
+        <div class="victory-stats-grid">
+          <div class="v-stat">
+            <span class="v-label">SCORE EARNED</span>
+            <span class="v-val digits" id="lose-score-val">000030</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">WRONG GUESSES</span>
+            <span class="v-val digits" id="lose-wrong-count">06</span>
+          </div>
+          <div class="v-stat">
+            <span class="v-label">TIME TAKEN</span>
+            <span class="v-val digits" id="lose-time-val">01:12</span>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="arcade-btn primary-coin-btn" id="btn-lose-retry">
+            <span>TRY AGAIN</span>
+          </button>
+          <button type="button" class="arcade-btn secondary-btn" id="btn-lose-new">
+            <span>NEW CHALLENGE</span>
+          </button>
+          <button type="button" class="arcade-btn secondary-btn" id="btn-lose-menu">
+            <span>MAIN MENU</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. DAILY CHALLENGE MODAL -->
+  <div class="arcade-modal" id="daily-modal" role="dialog" aria-modal="true" aria-labelledby="daily-title">
+    <div class="modal-backdrop close-modal-trigger"></div>
+    <div class="modal-card">
+      <div class="modal-marquee-top">
+        TODAY'S ARCADE CHALLENGE
+      </div>
+      <div class="modal-body">
+        <h2 id="daily-title" class="modal-headline">GLOBAL DAILY WORD</h2>
+        <p class="modal-subhead" id="daily-date-label">DATE: 2026-10-21 (ASIA/KOLKATA BOUNDARY)</p>
+
+        <div class="daily-info-card">
+          <div class="daily-rule-item">
+            <span class="rule-icon">🌍</span>
+            <span>One identical secret word for every player on the planet today.</span>
+          </div>
+          <div class="daily-rule-item">
+            <span class="rule-icon">🎯</span>
+            <span>Single attempt scored toward your official Daily Streak.</span>
+          </div>
+          <div class="daily-rule-item">
+            <span class="rule-icon">⏰</span>
+            <span>Resets daily at 12:00 AM IST.</span>
+          </div>
+        </div>
+
+        <div id="daily-status-banner" class="daily-status-box">
+          <!-- Dynamically populated: Ready or Already Completed -->
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="arcade-btn primary-coin-btn" id="btn-start-daily">
+            <span>PLAY TODAY'S CHALLENGE</span>
+          </button>
+          <button type="button" class="arcade-btn secondary-btn close-modal-btn">
+            <span>CANCEL</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. TWO-PLAYER SETUP MODAL -->
+  <div class="arcade-modal" id="two-player-modal" role="dialog" aria-modal="true" aria-labelledby="twoplayer-title">
+    <div class="modal-backdrop close-modal-trigger"></div>
+    <div class="modal-card">
+      <div class="modal-marquee-top">
+        LOCAL 2-PLAYER VERSUS
+      </div>
+      <div class="modal-body">
+        <h2 id="twoplayer-title" class="modal-headline">PLAYER 1: ENTER WORD</h2>
+        <p class="modal-subhead">CHOOSE A SECRET WORD FOR PLAYER 2 TO GUESS</p>
+
+        <form id="twoplayer-form" class="arcade-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="p1-word-input" class="form-label">SECRET WORD (3-20 LETTERS, A-Z ONLY):</label>
+            <div class="password-wrapper">
+              <input type="password" id="p1-word-input" class="arcade-input" maxlength="20" placeholder="e.g. CYBERPUNK" autocomplete="off" required>
+              <button type="button" class="toggle-mask-btn" id="toggle-word-mask" title="Reveal / Hide Word">👁️</button>
+            </div>
+            <span class="input-tip">Spaces and non-letters will be automatically stripped.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="p1-clue-input" class="form-label">OPTIONAL CLUE (REVEALED IF HINT PURCHASED):</label>
+            <input type="text" id="p1-clue-input" class="arcade-input" maxlength="100" placeholder="e.g. A dystopian genre with high tech and low life">
+          </div>
+
+          <div class="modal-actions">
+            <button type="submit" class="arcade-btn primary-coin-btn" id="btn-submit-twoplayer">
+              <span>PASS TO PLAYER 2 →</span>
+            </button>
+            <button type="button" class="arcade-btn secondary-btn close-modal-btn">
+              <span>CANCEL</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. HALL OF FAME / STATISTICS MODAL -->
+  <div class="arcade-modal" id="stats-modal" role="dialog" aria-modal="true" aria-labelledby="stats-title">
+    <div class="modal-backdrop close-modal-trigger"></div>
+    <div class="modal-card wide-card">
+      <div class="modal-marquee-top">
+        HIGH SCORE ARCADE • HALL OF FAME
+      </div>
+      <div class="modal-body">
+        <h2 id="stats-title" class="modal-headline">PLAYER LIFETIME METRICS</h2>
+        <p class="modal-subhead">LOCAL DATA PERSISTED VIA SQLITE DATABASE</p>
+
+        <div class="stats-scoreboard-grid">
+          <div class="score-tile">
+            <span class="tile-label">GAMES PLAYED</span>
+            <span class="tile-val digits" id="stat-total-games">0</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">GAMES WON</span>
+            <span class="tile-val digits success-glow" id="stat-games-won">0</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">GAMES LOST</span>
+            <span class="tile-val digits error-glow" id="stat-games-lost">0</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">WIN RATE</span>
+            <span class="tile-val digits" id="stat-win-rate">0.0%</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">HIGH SCORE</span>
+            <span class="tile-val digits gold-glow" id="stat-high-score">0</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">TOTAL SCORE</span>
+            <span class="tile-val digits" id="stat-total-score">0</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">CURRENT STREAK</span>
+            <span class="tile-val digits" id="stat-curr-streak">0</span>
+          </div>
+          <div class="score-tile">
+            <span class="tile-label">BEST STREAK</span>
+            <span class="tile-val digits" id="stat-best-streak">0</span>
+          </div>
+        </div>
+
+        <h3 class="recent-matches-title">RECENT MATCH RECORDS</h3>
+        <div class="recent-matches-table-wrapper">
+          <table class="arcade-table">
+            <thead>
+              <tr>
+                <th>RESULT</th>
+                <th>WORD</th>
+                <th>CATEGORY</th>
+                <th>DIFFICULTY</th>
+                <th>SCORE</th>
+                <th>TIME</th>
+                <th>DATE</th>
+              </tr>
+            </thead>
+            <tbody id="recent-games-tbody">
+              <tr>
+                <td colspan="7" class="empty-state">No games recorded yet. Step into the arcade to establish your record!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-actions stats-actions">
+          <button type="button" class="arcade-btn secondary-btn danger-btn" id="btn-reset-stats">
+            <span>RESET STATISTICS</span>
+          </button>
+          <button type="button" class="arcade-btn secondary-btn close-modal-btn">
+            <span>CLOSE</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. HOW TO PLAY / RULES MODAL -->
+  <div class="arcade-modal" id="rules-modal" role="dialog" aria-modal="true" aria-labelledby="rules-title">
+    <div class="modal-backdrop close-modal-trigger"></div>
+    <div class="modal-card">
+      <div class="modal-marquee-top">
+        ARCADE OPERATOR INSTRUCTION CARD
+      </div>
+      <div class="modal-body">
+        <h2 id="rules-title" class="modal-headline">RULES OF ENGAGEMENT</h2>
+        <div class="rules-scrollable">
+          <div class="rule-block">
+            <h4>1. OBJECTIVE</h4>
+            <p>Decode the secret hidden word by guessing one letter at a time using your physical keyboard or the onscreen arcade console before six strikes construct the hanging character.</p>
+          </div>
+          <div class="rule-block">
+            <h4>2. THE GALLOWS (6 STRIKES)</h4>
+            <p>You begin with 6 lives. Each incorrect letter draws a new body segment (Head → Torso → Left Arm → Right Arm → Left Leg → Right Leg). On strike 6, the gallows falls and game over is triggered.</p>
+          </div>
+          <div class="rule-block">
+            <h4>3. SCORING FORMULA</h4>
+            <ul>
+              <li><strong>+10 PTS</strong> for each correct letter revealed.</li>
+              <li><strong>+100 PTS</strong> bonus for completing the secret word.</li>
+              <li><strong>+15 PTS</strong> per remaining attempt/life spared.</li>
+              <li><strong>-20 PTS</strong> per hint purchased (score cannot fall below zero).</li>
+              <li><strong>0 PTS</strong> for incorrect or repeated guesses (duplicate guesses never penalize lives).</li>
+            </ul>
+          </div>
+          <div class="rule-block">
+            <h4>4. HINT SYSTEM</h4>
+            <p><strong>Hint 1:</strong> Reveals a thematic clue about the word.<br>
+            <strong>Hint 2:</strong> Automatically unmasks one remaining letter across all its positions without awarding guess points.</p>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="arcade-btn primary-coin-btn close-modal-btn">
+            <span>UNDERSTOOD • ENTER ARCADE</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. SETTINGS MODAL -->
+  <div class="arcade-modal" id="settings-modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <div class="modal-backdrop close-modal-trigger"></div>
+    <div class="modal-card">
+      <div class="modal-marquee-top">
+        CABINET CONFIGURATION DIP-SWITCHES
+      </div>
+      <div class="modal-body">
+        <h2 id="settings-title" class="modal-headline">SYSTEM PREFERENCES</h2>
+        <p class="modal-subhead">CUSTOMIZE HARDWARE SOUND & GRAPHIC SHADERS</p>
+
+        <div class="settings-options">
+          
+          <div class="setting-item">
+            <div class="setting-desc">
+              <span class="setting-name">ARCADE SOUND EFFECTS</span>
+              <span class="setting-sub">Synthesized 8-bit chiptune sound cues</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-sound" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="setting-item">
+            <div class="setting-desc">
+              <span class="setting-name">ENVIRONMENTAL AMBIENCE</span>
+              <span class="setting-sub">Low 60Hz cathode hum & arcade room presence</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-ambience">
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="setting-item">
+            <div class="setting-desc">
+              <span class="setting-name">NEON GLOW INTENSITY</span>
+              <span class="setting-sub">Toggle vibrant bloom or subdued contrast</span>
+            </div>
+            <select id="setting-glow" class="arcade-select">
+              <option value="normal" selected>Normal Glow</option>
+              <option value="reduced">Reduced Glow</option>
+            </select>
+          </div>
+
+          <div class="setting-item">
+            <div class="setting-desc">
+              <span class="setting-name">MOTION & SHADERS</span>
+              <span class="setting-sub">CRT scanlines and camera pulse animations</span>
+            </div>
+            <select id="setting-motion" class="arcade-select">
+              <option value="normal" selected>Normal Motion</option>
+              <option value="reduced">Reduced Motion</option>
+            </select>
+          </div>
+
+          <div class="setting-item">
+            <div class="setting-desc">
+              <span class="setting-name">COLOR ACCESSIBILITY</span>
+              <span class="setting-sub">Neon Noir Retro (Default) or High Contrast</span>
+            </div>
+            <select id="setting-theme" class="arcade-select">
+              <option value="neon" selected>Neon Noir Retro</option>
+              <option value="contrast">High Contrast</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="arcade-btn primary-coin-btn close-modal-btn">
+            <span>SAVE PREFERENCES</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

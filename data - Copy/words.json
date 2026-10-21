@@ -1,0 +1,1730 @@
+[
+  {
+    "word": "TIGER",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Striped apex predator of the Asian jungle."
+  },
+  {
+    "word": "ZEBRA",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "African equine famous for black-and-white stripes."
+  },
+  {
+    "word": "EAGLE",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Majestic bird of prey with keen eyesight."
+  },
+  {
+    "word": "PANDA",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Bamboo-loving black and white bear from China."
+  },
+  {
+    "word": "KOALA",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Australian tree-dwelling marsupial fond of eucalyptus."
+  },
+  {
+    "word": "OTTER",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Playful semi-aquatic mammal known for holding hands."
+  },
+  {
+    "word": "SHARK",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Cartilaginous ocean predator with multiple rows of teeth."
+  },
+  {
+    "word": "CAMEL",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Desert mammal capable of storing fat in its hump."
+  },
+  {
+    "word": "WOLF",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Pack-hunting wild canine that howls at night."
+  },
+  {
+    "word": "BEAR",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Large mammal that hibernates during cold winters."
+  },
+  {
+    "word": "FALCON",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Fastest diving bird of prey on Earth."
+  },
+  {
+    "word": "LEMUR",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Primate native only to the island of Madagascar."
+  },
+  {
+    "word": "FOX",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Cunning omnivorous mammal with a bushy tail."
+  },
+  {
+    "word": "LION",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "The king of beasts living in social prides."
+  },
+  {
+    "word": "RABBIT",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Long-eared hopping herbivore that burrows."
+  },
+  {
+    "word": "DOLPHIN",
+    "category": "Animals",
+    "difficulty": "easy",
+    "clue": "Highly intelligent marine mammal known for playful acrobatics."
+  },
+  {
+    "word": "CHEETAH",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Fastest land mammal reaching over 60 mph in bursts."
+  },
+  {
+    "word": "GIRAFFE",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Tallest living terrestrial animal with long neck."
+  },
+  {
+    "word": "GORILLA",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Ground-dwelling herbivorous ape of central Africa."
+  },
+  {
+    "word": "OCTOPUS",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Eight-armed cephalopod capable of camouflage and ink defense."
+  },
+  {
+    "word": "PANTHER",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Melanistic leopard or jaguar stealth hunter."
+  },
+  {
+    "word": "BUFFALO",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Large bovine with curved horns found in plains and marsh."
+  },
+  {
+    "word": "MEERKAT",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Small mongoose that stands upright on look-out duty."
+  },
+  {
+    "word": "LEOPARD",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Spotted big cat that hauls heavy prey up into trees."
+  },
+  {
+    "word": "HAMSTER",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Small burrowing rodent with expandable cheek pouches."
+  },
+  {
+    "word": "PELICAN",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Water bird with a large throat pouch for scooping fish."
+  },
+  {
+    "word": "PENGUIN",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Flightless aquatic bird thriving in polar waters."
+  },
+  {
+    "word": "RACCOON",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Nocturnal mammal with a black facial bandit mask."
+  },
+  {
+    "word": "BADGER",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Stout digging mammal with distinct facial stripes."
+  },
+  {
+    "word": "GAZELLE",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Graceful antelope known for swift bounding leaps."
+  },
+  {
+    "word": "LOBSTER",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Marine crustacean with large asymmetric claws."
+  },
+  {
+    "word": "TORTOISE",
+    "category": "Animals",
+    "difficulty": "medium",
+    "clue": "Slow-moving land reptile with a protective bony carapace."
+  },
+  {
+    "word": "CHAMELEON",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Lizard with independently mobile eyes and color-shifting skin."
+  },
+  {
+    "word": "RHINOCEROS",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Massive herbivore with thick skin and keratinous horn."
+  },
+  {
+    "word": "ORANGUTAN",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Long-armed red-haired ape native to Indonesian rainforests."
+  },
+  {
+    "word": "CHINCHILLA",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "South American rodent prized for ultra-dense velvety fur."
+  },
+  {
+    "word": "CROCODILE",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Large predatory aquatic reptile dating back to dinosaur eras."
+  },
+  {
+    "word": "HIPPOPOTAMUS",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Sub-Saharan semi-aquatic giant spending days in river mud."
+  },
+  {
+    "word": "SALAMANDER",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Lizard-shaped amphibian capable of regenerating lost limbs."
+  },
+  {
+    "word": "ARMADILLO",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Mammal armored with leathery plates that curls into a ball."
+  },
+  {
+    "word": "WOODPECKER",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Tree-climbing bird that pecks bark with shock-absorbing skull."
+  },
+  {
+    "word": "PLATYPUS",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Egg-laying semi-aquatic Australian mammal with duck-like bill."
+  },
+  {
+    "word": "JELLYFISH",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Gelatinous umbrella-shaped sea creature with stinging tentacles."
+  },
+  {
+    "word": "BARRACUDA",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Ferocious torpedo-shaped saltwater predatory fish."
+  },
+  {
+    "word": "WOLVERINE",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Solitary muscular carnivore known for ferocious tenacity."
+  },
+  {
+    "word": "HEDGEHOG",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Spiny small mammal that rolls into a prickly sphere."
+  },
+  {
+    "word": "PORCUPINE",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Rodent defended by sharp, barbed defensive quills."
+  },
+  {
+    "word": "ALBATROSS",
+    "category": "Animals",
+    "difficulty": "hard",
+    "clue": "Oceanic seabird possessing the longest wingspan on Earth."
+  },
+  {
+    "word": "INDIA",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "South Asian republic home to the Taj Mahal and Himalayas."
+  },
+  {
+    "word": "JAPAN",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Island nation known for Mount Fuji, cherry blossoms, and anime."
+  },
+  {
+    "word": "BRAZIL",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Largest South American country famed for the Amazon rainforest."
+  },
+  {
+    "word": "FRANCE",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "European nation celebrated for the Eiffel Tower and haute cuisine."
+  },
+  {
+    "word": "CANADA",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Northern country famous for the maple leaf and vast lakes."
+  },
+  {
+    "word": "ITALY",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Boot-shaped Mediterranean nation rich in Renaissance art."
+  },
+  {
+    "word": "SPAIN",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Iberian country known for flamenco, paella, and historic castles."
+  },
+  {
+    "word": "EGYPT",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Ancient civilization centered on the Nile and Great Pyramids."
+  },
+  {
+    "word": "CHILE",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Long, narrow strip of land nestled between Andes and Pacific."
+  },
+  {
+    "word": "NORWAY",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Nordic land of deep glacial fjords and midnight sun."
+  },
+  {
+    "word": "GREECE",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Cradle of democracy and home to the ancient Acropolis."
+  },
+  {
+    "word": "MEXICO",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "North American nation celebrated for ancient Mayan pyramids."
+  },
+  {
+    "word": "CHINA",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Ancient civilization known for the Great Wall and silk trade."
+  },
+  {
+    "word": "PERU",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Andean country home to the ancient Inca citadel Machu Picchu."
+  },
+  {
+    "word": "KENYA",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "East African nation renowned for the great wildebeest migration."
+  },
+  {
+    "word": "SWEDEN",
+    "category": "Countries",
+    "difficulty": "easy",
+    "clue": "Scandinavian country famous for northern lights and design."
+  },
+  {
+    "word": "GERMANY",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Central European nation famous for engineering and castles."
+  },
+  {
+    "word": "PORTUGAL",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Atlantic-facing Iberian maritime pioneer nation."
+  },
+  {
+    "word": "ICELAND",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Island nation of dramatic geysers, glaciers, and volcanoes."
+  },
+  {
+    "word": "FINLAND",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Land of a thousand lakes and Northern European saunas."
+  },
+  {
+    "word": "DENMARK",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Scandinavian kingdom famous for fairy tales and cycling."
+  },
+  {
+    "word": "VIETNAM",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Southeast Asian nation known for Ha Long Bay and rivers."
+  },
+  {
+    "word": "AUSTRIA",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Alpine country celebrated for classical music and palaces."
+  },
+  {
+    "word": "BELGIUM",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "European nation celebrated for fine chocolates and medieval towns."
+  },
+  {
+    "word": "MOROCCO",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "North African kingdom of bustling souks and desert dunes."
+  },
+  {
+    "word": "NIGERIA",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Most populous African nation and vibrant cultural giant."
+  },
+  {
+    "word": "COLOMBIA",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "South American nation rich in coffee plantations and emeralds."
+  },
+  {
+    "word": "CROATIA",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Adriatic coastal nation famous for scenic walled cities."
+  },
+  {
+    "word": "IRELAND",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "The Emerald Isle celebrated for folklore and lush hills."
+  },
+  {
+    "word": "URUGUAY",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "South American coastal country known for beaches and mate tea."
+  },
+  {
+    "word": "THAILAND",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "The Land of Smiles known for ornate Buddhist temples."
+  },
+  {
+    "word": "ECUADOR",
+    "category": "Countries",
+    "difficulty": "medium",
+    "clue": "Country named for its equatorial position and Galapagos Islands."
+  },
+  {
+    "word": "ARGENTINA",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "South American country of tango, Patagonia, and pampas."
+  },
+  {
+    "word": "AUSTRALIA",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Continent-sized country home to the Great Barrier Reef."
+  },
+  {
+    "word": "SWITZERLAND",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Mountainous European nation known for neutrality and Alps."
+  },
+  {
+    "word": "NETHERLANDS",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Low-lying kingdom of canals, tulips, and historic windmills."
+  },
+  {
+    "word": "INDONESIA",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Vast archipelago nation comprising over 17,000 tropical islands."
+  },
+  {
+    "word": "MADAGASCAR",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Large Indian Ocean island with endemic unique wildlife."
+  },
+  {
+    "word": "SINGAPORE",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Prosperous island city-state in Southeast Asia."
+  },
+  {
+    "word": "PHILIPPINES",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Archipelago nation of over 7,000 islands in the western Pacific."
+  },
+  {
+    "word": "BANGLADESH",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "South Asian country marked by lush river delta waterways."
+  },
+  {
+    "word": "KAZAKHSTAN",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "World's largest landlocked country spanning Central Asia."
+  },
+  {
+    "word": "AZERBAIJAN",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Transcontinental nation on Caspian Sea dubbed Land of Fire."
+  },
+  {
+    "word": "LUXEMBOURG",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Small landlocked European grand duchy with medieval quarters."
+  },
+  {
+    "word": "MOZAMBIQUE",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Southeast African nation along long Indian Ocean coastline."
+  },
+  {
+    "word": "GUATEMALA",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Central American nation rich in Mayan ruins and volcanoes."
+  },
+  {
+    "word": "UZBEKISTAN",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Central Asian Silk Road nation famous for Samarkand mosques."
+  },
+  {
+    "word": "ZIMBABWE",
+    "category": "Countries",
+    "difficulty": "hard",
+    "clue": "Southern African nation home to spectacular Victoria Falls."
+  },
+  {
+    "word": "PYTHON",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Popular high-level interpreted programming language."
+  },
+  {
+    "word": "ROBOT",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Automated machine executing programmed tasks."
+  },
+  {
+    "word": "SERVER",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Computer providing data, resources, or network services."
+  },
+  {
+    "word": "ROUTER",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Network hardware directing data packets across IP networks."
+  },
+  {
+    "word": "PIXEL",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Smallest addressable color unit of a digital display."
+  },
+  {
+    "word": "BINARY",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Base-2 number system composed entirely of zeros and ones."
+  },
+  {
+    "word": "MEMORY",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Component storing computational data and instructions."
+  },
+  {
+    "word": "KERNEL",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Core module of an operating system managing hardware."
+  },
+  {
+    "word": "CHIP",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Miniaturized electronic integrated circuit on semiconductor."
+  },
+  {
+    "word": "CLOUD",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "On-demand internet delivery of computing power and storage."
+  },
+  {
+    "word": "DATA",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Raw facts and figures processed by computing systems."
+  },
+  {
+    "word": "DRONE",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Unmanned aerial vehicle controlled remotely or autonomously."
+  },
+  {
+    "word": "MODEM",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Device modulating and demodulating digital network signals."
+  },
+  {
+    "word": "CURSOR",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Movable onscreen indicator signaling user input focus."
+  },
+  {
+    "word": "VECTOR",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Geometric graphic format defined by mathematical formulas."
+  },
+  {
+    "word": "HACKER",
+    "category": "Technology",
+    "difficulty": "easy",
+    "clue": "Expert exploring systems or penetrating software security."
+  },
+  {
+    "word": "CIRCUIT",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Closed loop through which electric current can flow."
+  },
+  {
+    "word": "NETWORK",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Interconnected computing devices sharing resources."
+  },
+  {
+    "word": "MONITOR",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Visual output hardware device displaying user interface."
+  },
+  {
+    "word": "BROWSER",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Software application used to access and render the World Wide Web."
+  },
+  {
+    "word": "GATEWAY",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Network node serving as entrance to another network."
+  },
+  {
+    "word": "BATTERY",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Electrochemical device storing electrical energy portably."
+  },
+  {
+    "word": "KEYBOARD",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Primary alphanumeric input device with physical keys."
+  },
+  {
+    "word": "FIREWALL",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Security barrier filtering incoming and outgoing network traffic."
+  },
+  {
+    "word": "FIRMWARE",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Permanent software programmed into read-only memory."
+  },
+  {
+    "word": "DATABASE",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Structured collection of electronically stored data."
+  },
+  {
+    "word": "CONSOLE",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Dedicated electronic device for playing video games."
+  },
+  {
+    "word": "STORAGE",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Hardware retention medium holding digital information."
+  },
+  {
+    "word": "COMPILER",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Program translating source code into machine executables."
+  },
+  {
+    "word": "WIRELESS",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Telecommunication transferring signals without cables."
+  },
+  {
+    "word": "PROCESSOR",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Central processing unit executing core program instructions."
+  },
+  {
+    "word": "HARDWARE",
+    "category": "Technology",
+    "difficulty": "medium",
+    "clue": "Physical mechanical and electronic components of a computer."
+  },
+  {
+    "word": "ALGORITHM",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Step-by-step mathematical procedure for solving a computational problem."
+  },
+  {
+    "word": "BLUETOOTH",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Short-range wireless technology connecting local devices."
+  },
+  {
+    "word": "CYBERSPACE",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Virtual environment of computer networks and digital data."
+  },
+  {
+    "word": "ENCRYPTION",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Encoding information into unreadable ciphertext for security."
+  },
+  {
+    "word": "JAVASCRIPT",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Dynamic scripting language powering interactive web pages."
+  },
+  {
+    "word": "MAINFRAME",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "High-capacity centralized computer handling massive enterprise tasks."
+  },
+  {
+    "word": "MICROCHIP",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Tiny slice of semiconducting material holding thousands of circuits."
+  },
+  {
+    "word": "MOTHERBOARD",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Main printed circuit board connecting all internal hardware."
+  },
+  {
+    "word": "NANOTECH",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Engineering matter at atomic and molecular scales."
+  },
+  {
+    "word": "BANDWIDTH",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Maximum data transfer capacity of a network channel."
+  },
+  {
+    "word": "VIRTUALITY",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Digital simulation mimicking real or imagined spaces."
+  },
+  {
+    "word": "SIMULATION",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Imitation of a real-world system or physical phenomenon."
+  },
+  {
+    "word": "SUPERCOMPUTER",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Ultra-fast computational cluster built for complex scientific calculations."
+  },
+  {
+    "word": "CRYPTOGRAPHY",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Science of protecting communications through mathematical ciphers."
+  },
+  {
+    "word": "AUTOMATION",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Use of technology to execute processes with minimal human input."
+  },
+  {
+    "word": "INTELLIGENCE",
+    "category": "Technology",
+    "difficulty": "hard",
+    "clue": "Computational capability to perceive, reason, and learn."
+  },
+  {
+    "word": "ALIEN",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Sci-fi horror classic directed by Ridley Scott."
+  },
+  {
+    "word": "JAWS",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Spielberg blockbuster about a colossal man-eating great white shark."
+  },
+  {
+    "word": "MATRIX",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Sci-fi epic where Neo discovers humanity lives in a simulation."
+  },
+  {
+    "word": "AVATAR",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "James Cameron spectacle set on the moon Pandora."
+  },
+  {
+    "word": "FROZEN",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Disney animated musical featuring Elsa and 'Let It Go'."
+  },
+  {
+    "word": "BATMAN",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Dark Knight defender of Gotham City."
+  },
+  {
+    "word": "CASPER",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Friendly ghost movie set in Whipstaff Manor."
+  },
+  {
+    "word": "SHREK",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Beloved green ogre saving Princess Fiona from a tower."
+  },
+  {
+    "word": "ROCKY",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Sylvester Stallone's inspirational underdog boxing story."
+  },
+  {
+    "word": "TITANIC",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Epic romance and tragedy aboard the doomed ocean liner."
+  },
+  {
+    "word": "PSYCHO",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Alfred Hitchcock thriller featuring the infamous Bates Motel."
+  },
+  {
+    "word": "UP",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Pixar movie where a house is lifted by thousands of helium balloons."
+  },
+  {
+    "word": "GREASE",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Iconic 1950s musical set at Rydell High School."
+  },
+  {
+    "word": "TARZAN",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Man raised by great apes in the African jungle."
+  },
+  {
+    "word": "ALADDIN",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Street thief finds magic lamp housing a wisecracking Genie."
+  },
+  {
+    "word": "SCREAM",
+    "category": "Movies",
+    "difficulty": "easy",
+    "clue": "Wes Craven slasher featuring the Ghostface mask."
+  },
+  {
+    "word": "INCEPTION",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Mind-bending heist thriller about entering subconscious dreams."
+  },
+  {
+    "word": "GLADIATOR",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Historical epic where betrayed Roman general Maximus seeks justice."
+  },
+  {
+    "word": "GODFATHER",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Francis Ford Coppola masterpiece tracing the Corleone crime family."
+  },
+  {
+    "word": "SCARFACE",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Al Pacino portrays ambitious Miami cartel boss Tony Montana."
+  },
+  {
+    "word": "VERTIGO",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Hitchcock psychological mystery centered on acrophobia and obsession."
+  },
+  {
+    "word": "PLATOON",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Oliver Stone's visceral Oscar-winning Vietnam War drama."
+  },
+  {
+    "word": "CASABLANCA",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Wartime drama starring Humphrey Bogart and Ingrid Bergman."
+  },
+  {
+    "word": "BRAVEHEART",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "William Wallace leads Scottish rebellion against King Edward I."
+  },
+  {
+    "word": "GOODFELLAS",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Martin Scorsese crime classic following mobster Henry Hill."
+  },
+  {
+    "word": "MEMENTO",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Christopher Nolan neo-noir told backwards with short-term amnesia."
+  },
+  {
+    "word": "PREDATOR",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Jungle commando unit hunted by a technologically advanced alien."
+  },
+  {
+    "word": "TERMINATOR",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Cyborg assassin sent back from future to eliminate Sarah Connor."
+  },
+  {
+    "word": "JURASSIC",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Island park where cloned dinosaurs break free from enclosures."
+  },
+  {
+    "word": "WHIPLASH",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Intense drama between an aspiring jazz drummer and ruthless instructor."
+  },
+  {
+    "word": "SUPERMAN",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "The Man of Steel sent from dying Krypton to protect Earth."
+  },
+  {
+    "word": "PARASITE",
+    "category": "Movies",
+    "difficulty": "medium",
+    "clue": "Bong Joon-ho Oscar-winning South Korean class-struggle thriller."
+  },
+  {
+    "word": "INTERSTELLAR",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Astronauts travel through a wormhole near Saturn searching for humanity's home."
+  },
+  {
+    "word": "OPPENHEIMER",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Biographical epic depicting the father of the atomic bomb."
+  },
+  {
+    "word": "PULPFICTION",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Quentin Tarantino's nonlinear interconnected Los Angeles crime tales."
+  },
+  {
+    "word": "APOCALYPSE",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Francis Ford Coppola's surreal voyage into Vietnam's heart of darkness."
+  },
+  {
+    "word": "RATATOUILLE",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Talented Paris rat dreams of becoming a master gourmet chef."
+  },
+  {
+    "word": "GHOSTBUSTERS",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Paranormal scientists save New York City from supernatural forces."
+  },
+  {
+    "word": "BEETLEJUICE",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Tim Burton comedy about a mischievous freelance bio-exorcist."
+  },
+  {
+    "word": "CINEMATOGRAPHY",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Art and technique of lighting and shooting motion picture camera frames."
+  },
+  {
+    "word": "FRANKENSTEIN",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Classic horror tale of an ambitious scientist creating a sentient creature."
+  },
+  {
+    "word": "BLADERUNNER",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Dystopian sci-fi noir hunting bioengineered synthetic humans."
+  },
+  {
+    "word": "TRANSFORMERS",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Alien robots disguised as vehicles waging war for the AllSpark."
+  },
+  {
+    "word": "SOUNDTRACK",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Musical score recorded specifically for accompanying a film."
+  },
+  {
+    "word": "METROPOLIS",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Fritz Lang's 1927 foundational expressionist science-fiction masterwork."
+  },
+  {
+    "word": "BLOCKBUSTER",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Hugely popular and commercially successful Hollywood film."
+  },
+  {
+    "word": "DOCUMENTARY",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Non-fiction film providing factual record of a topic or person."
+  },
+  {
+    "word": "SCREENPLAY",
+    "category": "Movies",
+    "difficulty": "hard",
+    "clue": "Written script outlining characters, dialogue, and cinematic actions."
+  },
+  {
+    "word": "SOCCER",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "World's most popular sport played with a round ball and goals."
+  },
+  {
+    "word": "TENNIS",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Racket sport played across a net on grass, clay, or hard courts."
+  },
+  {
+    "word": "BOXING",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Combat sport where fighters throw punches inside a roped ring."
+  },
+  {
+    "word": "RUGBY",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Contact team sport played with an oval ball and backward passes."
+  },
+  {
+    "word": "GOLF",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Club sport aiming to sink balls into holes with fewest strokes."
+  },
+  {
+    "word": "HOCKEY",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Fast-paced game played on ice or turf using curved sticks and puck."
+  },
+  {
+    "word": "JUDO",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Japanese martial art focusing on throws and joint-lock pins."
+  },
+  {
+    "word": "KARATE",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Striking martial art utilizing punches, kicks, and open hands."
+  },
+  {
+    "word": "CRICKET",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Bat-and-ball game played on a pitch between two sets of wickets."
+  },
+  {
+    "word": "SKIING",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Winter sport gliding down snow-covered slopes on long boards."
+  },
+  {
+    "word": "ROWING",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Water sport propelling narrow racing shells with oars."
+  },
+  {
+    "word": "SQUASH",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Racket game played inside a four-walled enclosed court."
+  },
+  {
+    "word": "POLO",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Team equestrian ball game played on horseback with long mallets."
+  },
+  {
+    "word": "SURF",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Riding ocean waves while balancing on a fiberglass board."
+  },
+  {
+    "word": "CHESS",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "Ancient strategic mind sport played on a 64-square checkered board."
+  },
+  {
+    "word": "SPRINT",
+    "category": "Sports",
+    "difficulty": "easy",
+    "clue": "High-intensity short-distance track running event."
+  },
+  {
+    "word": "BASEBALL",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Diamond-shaped field game involving home runs and nine innings."
+  },
+  {
+    "word": "SWIMMING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Aquatic racing through strokes like freestyle, breaststroke, and butterfly."
+  },
+  {
+    "word": "ARCHERY",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Precision target sport shooting arrows from a recurve or compound bow."
+  },
+  {
+    "word": "CYCLING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Riding bicycles in velodromes or long road tours like Tour de France."
+  },
+  {
+    "word": "FENCING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Sword combat sport featuring foil, epee, and sabre weapons."
+  },
+  {
+    "word": "BOWLING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Rolling heavy balls down polished wooden lanes to knock down ten pins."
+  },
+  {
+    "word": "SKATING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Gliding on ice or pavement with bladed or wheeled footwear."
+  },
+  {
+    "word": "CLIMBING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Ascending natural rock faces or indoor artificial climbing walls."
+  },
+  {
+    "word": "SAILING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Navigating watercraft harnessing the propulsion of wind in sails."
+  },
+  {
+    "word": "HANDBALL",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Team sport passing a ball with hands to throw into opponents' goal."
+  },
+  {
+    "word": "BIATHLON",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Winter sports contest combining cross-country skiing and rifle shooting."
+  },
+  {
+    "word": "CURLING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Sliding polished granite stones across ice toward a concentric target."
+  },
+  {
+    "word": "MARATHON",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Legendary long-distance running road race measuring 26.2 miles."
+  },
+  {
+    "word": "BILLIARDS",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Cue sport played on cloth-covered pocketed tables with cue balls."
+  },
+  {
+    "word": "BADMINTON",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "High-speed racket sport volleying a feathered shuttlecock over net."
+  },
+  {
+    "word": "WRESTLING",
+    "category": "Sports",
+    "difficulty": "medium",
+    "clue": "Combat grapple sport aiming to achieve pinfall or takedown points."
+  },
+  {
+    "word": "BASKETBALL",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "High-scoring game dribbling and shooting into an elevated 10-foot hoop."
+  },
+  {
+    "word": "VOLLEYBALL",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Teams hit ball over net preventing it from touching court floor."
+  },
+  {
+    "word": "GYMNASTICS",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Acrobatic discipline featuring balance beam, rings, and vault."
+  },
+  {
+    "word": "SNOWBOARD",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Riding down snow-covered slopes attached to a single fiberglass board."
+  },
+  {
+    "word": "SKATEBOARD",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Riding and performing tricks on a short deck with four polyurethane wheels."
+  },
+  {
+    "word": "EQUESTRIAN",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Olympic sport demonstrating horseback riding, dressage, and jumping."
+  },
+  {
+    "word": "TAEKWONDO",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Korean martial art characterized by head-height leaping kicks."
+  },
+  {
+    "word": "DECATHLON",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Combined track and field event contested over ten distinct disciplines."
+  },
+  {
+    "word": "TRIATHLON",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Multi-discipline endurance race of swimming, cycling, and running."
+  },
+  {
+    "word": "CHAMPIONSHIP",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Top tournament or title match deciding the overall premier team."
+  },
+  {
+    "word": "KICKBOXING",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Hybrid stand-up combat sport incorporating kicking and boxing punches."
+  },
+  {
+    "word": "WEIGHTLIFT",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Lifting barbell loaded with heavy iron plates overhead in snatch and clean."
+  },
+  {
+    "word": "BODYBUILD",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Sport using progressive resistance exercise to sculpt and develop musculature."
+  },
+  {
+    "word": "MOTORSPORT",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Competitive racing involving motor vehicles such as Formula 1."
+  },
+  {
+    "word": "PARAGLIDER",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Non-motorized foot-launched glider aircraft soaring on thermals."
+  },
+  {
+    "word": "WINDSURFING",
+    "category": "Sports",
+    "difficulty": "hard",
+    "clue": "Surface water sport combining elements of surfing and sailing."
+  },
+  {
+    "word": "OXYGEN",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Chemical element essential for aerobic cellular respiration."
+  },
+  {
+    "word": "PLANET",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Celestial body orbiting a star cleared of debris."
+  },
+  {
+    "word": "GALAXY",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Vast gravitational system of stars, gas, and dark matter."
+  },
+  {
+    "word": "VOLCANO",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Rupture in crust allowing hot lava and gases to erupt."
+  },
+  {
+    "word": "DIAMOND",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Hardest naturally occurring mineral, made of pure carbon."
+  },
+  {
+    "word": "GRAVITY",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Fundamental force pulling objects with mass toward each other."
+  },
+  {
+    "word": "FOSSIL",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Mineralized remains or traces of prehistoric organisms."
+  },
+  {
+    "word": "DESERT",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Arid barren landscape with little precipitation and sparse flora."
+  },
+  {
+    "word": "FOREST",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Large area dominated by dense trees and undergrowth."
+  },
+  {
+    "word": "ISLAND",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Piece of land entirely surrounded by water."
+  },
+  {
+    "word": "CANYON",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Deep gorge carved through rock over millions of years by river."
+  },
+  {
+    "word": "GLACIER",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Persistent massive body of dense ice moving under own weight."
+  },
+  {
+    "word": "METEOR",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Streak of light created when space rock burns up in atmosphere."
+  },
+  {
+    "word": "AURORA",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Natural luminous light display in sky caused by solar particles."
+  },
+  {
+    "word": "TORNADO",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Violently rotating column of air in contact with ground."
+  },
+  {
+    "word": "MAGNET",
+    "category": "General Knowledge",
+    "difficulty": "easy",
+    "clue": "Material producing magnetic field attracting iron and steel."
+  },
+  {
+    "word": "PYRAMID",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Monumental stone structure with triangular outer surfaces."
+  },
+  {
+    "word": "ECLIPSE",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Astronomical event where one celestial body obscures another."
+  },
+  {
+    "word": "TSUNAMI",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Series of giant oceanic waves caused by underwater earthquake."
+  },
+  {
+    "word": "RAINBOW",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Meteorological optical illusion forming multi-color circular arc."
+  },
+  {
+    "word": "HORIZON",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Apparent line that separates the Earth's surface from the sky."
+  },
+  {
+    "word": "MINERAL",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Naturally occurring inorganic solid substance with crystal structure."
+  },
+  {
+    "word": "HARBOR",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Sheltered body of water where ships and boats can dock."
+  },
+  {
+    "word": "COMPASS",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Navigational instrument pointing toward magnetic north."
+  },
+  {
+    "word": "LIGHTHOUSE",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Tower with beacon of light warning ships of rocky shoals."
+  },
+  {
+    "word": "MICROSCOPE",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Optical tool magnifying tiny specimens invisible to naked eye."
+  },
+  {
+    "word": "TELESCOPE",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Optical device magnifying distant celestial bodies in the cosmos."
+  },
+  {
+    "word": "ATMOSPHERE",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Protective envelope of gases surrounding a planetary body."
+  },
+  {
+    "word": "EQUATOR",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Imaginary planetary circle dividing globe into North and South."
+  },
+  {
+    "word": "HEMISPHERE",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Half of the terrestrial sphere divided by equator or meridian."
+  },
+  {
+    "word": "PENINSULA",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "Piece of land bordered by water on three sides."
+  },
+  {
+    "word": "CONTINENT",
+    "category": "General Knowledge",
+    "difficulty": "medium",
+    "clue": "One of Earth's main continuous expanses of land mass."
+  },
+  {
+    "word": "ARCHAEOLOGY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Study of past human cultures through excavation of artifacts."
+  },
+  {
+    "word": "ASTRONOMY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Scientific study of stars, planets, galaxies, and universe."
+  },
+  {
+    "word": "PHOTOSYNTHESIS",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Biological process by which green plants convert sunlight to food."
+  },
+  {
+    "word": "CONSTELLATION",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Recognizable grouping of stars forming a mythological pattern."
+  },
+  {
+    "word": "METEOROLOGY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Atmospheric science studying weather forecasting and climate."
+  },
+  {
+    "word": "PALEONTOLOGY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Scientific study of prehistoric life and fossils."
+  },
+  {
+    "word": "OCEANOGRAPHY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Comprehensive physical and biological study of the world's oceans."
+  },
+  {
+    "word": "CARTOGRAPHY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Science and art of drawing geographical maps and charts."
+  },
+  {
+    "word": "METAMORPHIC",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Rock transformed from pre-existing rock by intense heat and pressure."
+  },
+  {
+    "word": "THERMOMETER",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Instrument measuring temperature with calibrated scale."
+  },
+  {
+    "word": "BAROMETER",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Scientific instrument measuring atmospheric pressure."
+  },
+  {
+    "word": "SOLARSYSTEM",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "The Sun and all celestial bodies bound to it by gravitational pull."
+  },
+  {
+    "word": "KINETICENERGY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Energy possessed by an object due to its physical motion."
+  },
+  {
+    "word": "RADIOACTIVITY",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Spontaneous emission of radiation by unstable atomic nuclei."
+  },
+  {
+    "word": "MICROORGANISM",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Microscopic living entity such as bacterium, virus, or amoeba."
+  },
+  {
+    "word": "EXPEDITION",
+    "category": "General Knowledge",
+    "difficulty": "hard",
+    "clue": "Journey undertaken by a group with a specific exploratory purpose."
+  }
+]
